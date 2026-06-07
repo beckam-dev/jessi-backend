@@ -20,6 +20,10 @@ public class Agregado {
         return insumo;
     }
 
+    public void setInsumo(Insumo insumo) {
+        this.insumo = insumo;
+    }
+
     public BigDecimal getPrecio() {
         return precio;
     }

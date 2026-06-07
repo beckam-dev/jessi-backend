@@ -8,7 +8,7 @@ public class Plato {
 
     private Long id;
     private String nombre;
-    private Insumo insumo_principal; // insumo principal, pedido inamovible, obligatorio.
+    private Insumo insumoPrincipal; // insumo principal, pedido inamovible, obligatorio.
     private List<Guarnicion> guarniciones; // guarniciones predeterminadas incluídas dentro del plato.
     private BigDecimal precio; // precio del plato (precio fijo, no cambia si se el cliente decide no llevar
                                // alguna o ninguna)
@@ -16,10 +16,10 @@ public class Plato {
     public Plato() {
     }
 
-    public Plato(Long id, String nombre, Insumo insumo_principal, List<Guarnicion> guarniciones, BigDecimal precio) {
+    public Plato(Long id, String nombre, Insumo insumoPrincipal, List<Guarnicion> guarniciones, BigDecimal precio) {
         this.id = id;
         this.nombre = nombre;
-        this.insumo_principal = insumo_principal;
+        this.insumoPrincipal = insumoPrincipal;
         this.guarniciones = guarniciones;
         this.precio = precio;
     }
@@ -36,12 +36,12 @@ public class Plato {
         this.nombre = nombre;
     }
 
-    public Insumo getInsumo_principal() {
-        return insumo_principal;
+    public Insumo getInsumoPrincipal() {
+        return insumoPrincipal;
     }
 
-    public void setInsumo_principal(Insumo insumo_principal) {
-        this.insumo_principal = insumo_principal;
+    public void setInsumoPrincipal(Insumo insumoPrincipal) {
+        this.insumoPrincipal = insumoPrincipal;
     }
 
     public List<Guarnicion> getGuarniciones() {
