@@ -8,16 +8,16 @@ public class Guarnicion {
     private Long id;
     private String nombre; // nombre en común de ciertos Insumo los cuales son electivos según la preferencia del cliente
     // ejemplo : "papa".
-    private List<Insumo> opcion; // opciones disponibles a elección del cliente puede ser una sola o múltiple
+    private List<Insumo> opciones; // opciones disponibles a elección del cliente puede ser una sola o múltiple
     // ejemplo : "papa sanchochada" / "papa frita"
     
     public Guarnicion() {
     }
 
-    public Guarnicion(Long id, String nombre, List<Insumo> opcion) {
+    public Guarnicion(Long id, String nombre, List<Insumo> opciones) {
         this.id = id;
         this.nombre = nombre;
-        this.opcion = opcion;
+        this.opciones = opciones;
     }
 
     public Long getId() {
@@ -32,12 +32,12 @@ public class Guarnicion {
         this.nombre = nombre;
     }
 
-    public List<Insumo> getOpcion() {
-        return opcion;
+    public List<Insumo> getOpciones() {
+        return opciones;
     }
 
-    public void setOpcion(List<Insumo> opcion) {
-        this.opcion = opcion;
+    public void setOpciones(List<Insumo> opciones) {
+        this.opciones = opciones;
     }
 
 }
