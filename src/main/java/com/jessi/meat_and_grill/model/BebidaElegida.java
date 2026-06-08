@@ -7,6 +7,9 @@ public class BebidaElegida {
     private BebidaOpcion bebida;
     private int cantidad;
 
+    public BebidaElegida() {
+    }
+
     public BebidaElegida(BebidaOpcion bebida, int cantidad) {
         this.bebida = bebida;
         this.cantidad = cantidad;
@@ -29,7 +32,7 @@ public class BebidaElegida {
     }
 
     public void disminuirCantidad(int cantidad) {
-        if (this.cantidad - cantidad >= 0) {
+        if (this.cantidad - cantidad > 0) {
             this.cantidad -= cantidad;
         }
     }
